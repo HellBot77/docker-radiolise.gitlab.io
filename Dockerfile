@@ -13,7 +13,7 @@ COPY --from=base /git/radiolise.gitlab.io .
 RUN npm install --global pnpm && \
     pnpm install && \
     export NODE_ENV=production && \
-    pnpm build:fullstack
+    pnpm build
 
 FROM lipanski/docker-static-website
 
